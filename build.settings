@@ -1,0 +1,22 @@
+settings = {
+	orientation = {
+		default = 'portrait',
+		supported = {'portrait', 'portraitUpsideDown'}
+	},
+	android = {
+		googlePlayGamesAppId = '760035641580' -- Your Google Play Games App Id
+	},
+	iphone = {
+		plist = {
+			GooglePlayGamesOAuth2ClientId = '760035641580-8eho8p557gtaaa7alouh5a2qlhtruomq.apps.googleusercontent.com',
+			CFBundleURLTypes = {
+				{CFBundleURLSchemes = {'com.googleusercontent.apps.760035641580-8eho8p557gtaaa7alouh5a2qlhtruomq'}},
+				{CFBundleURLSchemes = {'com.spiralcodestudio.gpgs'}}
+			}
+		}
+	},
+	plugins = {
+		['plugin.gpgs'] = {publisherId = 'com.coronalabs'}
+		--['plugin.gpgs'] = {publisherId = 'com.coronalabs', supportedPlatforms = {iphone = {url = 'https://dl.dropboxusercontent.com/u/55969280/gpgs-iphone.tgz'}}}
+	}
+}
